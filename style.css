@@ -1,0 +1,116 @@
+* {
+    perspective: 1000px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(249, 230, 160);
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgb(243, 93, 93);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 30rem;
+    border-radius: 30px;
+    padding: 0rem 4.2rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7), 0px 0px 50px rgba(0, 0, 0, 0.7);
+}
+
+.tomato {
+    perspective: 1000px;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease-out;
+}
+
+.tomato img {
+    transition: all 0.25s ease-out;
+    width: 12rem;
+    z-index: 2;
+}
+
+.circle {
+    margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: whitesmoke;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h1 {
+    margin: 2rem;
+    color: whitesmoke;
+    font-size: 3.2rem;
+    transition: all 0.75s ease-out;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.buttons button {
+    padding: 0.6rem 2rem;
+    background-color: rgb(143, 230, 165);
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button.active {
+    background: whitesmoke;
+    color: #585858;
+}
+
+.sus {
+    margin-top: 5rem;
+    margin-bottom: 4.2rem;
+    transition: all 0.75s ease-out;
+}
+
+.sus button {
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.75s ease-out;
+    width: 100%;
+    padding: 1rem 0rem;
+    background: whitesmoke;
+    border: none;
+    color: rgb(223, 69, 69);
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: larger;
+    font-weight: bolder;
+}
